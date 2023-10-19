@@ -1,0 +1,59 @@
+.projects{
+    margin-bottom: 16rem;
+    scroll-margin-top: 15rem;
+}
+
+.projects .projects_content{
+    max-width: 56rem;
+    text-align: center;
+    margin: 0 auto 6rem;
+}
+
+.projects ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.projects ul li.projects_reverse-list{
+    flex-direction: row-reverse;
+}
+
+.projects ul li:not(:last-of-type){
+    margin-bottom: 12rem;
+}
+
+.projects ul li .image img{
+    width: 100%;
+    min-width: 40rem;
+    max-width: 47rem;
+    height: auto;
+    border-radius: 25px;
+}
+
+.projects ul li .projects_info{
+    max-width: 47rem;
+}
+
+.projects ul li .projects_info p{
+    margin: 1rem 0 4rem;
+}
+
+/* Estilo inicial da caixa de diálogo */
+.projects ul li .projects_info .dialog-box {
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do texto clicável */
+.dialog-text {
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
